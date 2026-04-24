@@ -5,9 +5,9 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import UserProvider from './contexts/User';
 import Loader from './components/Loader.jsx';
 import { LoadingProvider } from './contexts/LoadingContext.jsx';
-import ProtectedRoute from './components/ProtectedRoute.jsx';
+import ProtectedRoute from './routes/ProtectedRoute.jsx';
 
-const Home = lazy(() => import('./Pages/Home/Home.jsx'))
+const Home = lazy(() => import('./Pages/Home.jsx'))
 const Error = lazy(() => import('./components/Error.jsx'))
 const JobDetails = lazy(() => import('./Pages/JobDetails/JobDetails.jsx'))
 const EmployerDashboard = lazy(() => import('./Pages/EmployerDashboard/EmployerDashboard.jsx'))
@@ -18,9 +18,9 @@ const Pending = lazy(() => import('./Pages/UserDashboard/Routes/Pending.jsx'))
 const Completed = lazy(() => import('./Pages/UserDashboard/Routes/Completed.jsx'))
 const Rejected = lazy(() => import('./Pages/UserDashboard/Routes/Rejected.jsx'))
 const Onboarding = lazy(() => import('./Pages/OnBoarding/Onboarding.jsx'))
-const SignUpAs = lazy(() => import('./Pages/Login&SignUp/SignUpAs.jsx'))
-const Login = lazy(() => import('./Pages/Login&SignUp/Login.jsx'))
-const SignUp = lazy(() => import('./Pages/Login&SignUp/SignUp.jsx'))
+const SignUpAs = lazy(() => import('./Pages/Auth/SignUpAs.jsx'))
+const Login = lazy(() => import('./Pages/Auth/Login.jsx'))
+const SignUp = lazy(() => import('./Pages/Auth/SignUp.jsx'))
 const GigsOptionsBody = lazy(() => import('./Pages/UserDashboard/components/GigsOptionsBody.jsx'))
 const Settings = lazy(() => import('./Pages/UserDashboard/Routes/Settings.jsx'))
 const Help = lazy(() => import('./Pages/UserDashboard/Routes/Help.jsx'))

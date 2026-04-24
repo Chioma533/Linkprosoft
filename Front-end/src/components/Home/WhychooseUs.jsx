@@ -1,8 +1,8 @@
-import Verified from "../../../assets/images/Verified.png"
-import Notify from "../../../assets/images/Notification.png"
-import Payment from "../../../assets/images/Payment.png"
-import Review from "../../../assets/images/Review.png"
-import Person5 from "../../../assets/images/Person5.png"
+import Verified from "../../assets/images/Verified.png"
+import Notify from "../../assets/images/Notification.png"
+import Payment from "../../assets/images/Payment.png"
+import Review from "../../assets/images/Review.png"
+import Person5 from "../../assets/images/Person5.png"
 
 const WhychooseUs = () => {
   return (

@@ -2,7 +2,7 @@ import { FaFacebook } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { LuCopyright } from "react-icons/lu";
 import { FaXTwitter } from "react-icons/fa6";
-import { categories, about, support, resources, industries } from "../../../data/FooterData.js"
+import { categories, about, support, resources, industries } from "../../data/FooterData.js"
 import { Link } from "react-router-dom";
 
 const Footer = () => {

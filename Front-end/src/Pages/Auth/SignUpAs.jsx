@@ -1,5 +1,5 @@
 import { useNavigate } from 'react-router-dom'
-import HeaderBanner from './components/HeaderBanner'
+import HeaderBanner from '../../components/HeaderBanner'
 import { useAuth } from '../../contexts/User'
 
 const SignUpAs = () => {
@@ -33,7 +33,7 @@ const SignUpAs = () => {
           </div>
 
           <div className='sm:w-[90%] lg:w-[70%] xl:w-[50%] mx-auto sm:flex gap-4'>
-            
+
             <div className='bg-white drop-shadow-lg rounded-lg w-[80%] mx-auto py-4 px-4 mb-6 sm:mb-0'>
               <h2 className="text-2xl font-bold font-Inter mb-3 text-center">Professional</h2>
               <p className='font-Inter text-[16px] pb-8 text-center'>Looking for your next gig? Be a part of Linkprosoft and leverage its opportunities.</p>

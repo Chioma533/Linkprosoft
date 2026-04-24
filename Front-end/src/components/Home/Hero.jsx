@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
-import Person1 from "../../../assets/images/Person1.png";
-import Person2 from "../../../assets/images/Person2.png";
-import Person3 from "../../../assets/images/Person3.png";
-import Person4 from "../../../assets/images/Person4.png";
-import Search from "../../../assets/images/search.svg";
-import Filter from "../../../assets/images/filter.svg";
-import Trust from "../../../assets/images/Trust.svg";
+import Person1 from "../../assets/images/Person1.png";
+import Person2 from "../../assets/images/Person2.png";
+import Person3 from "../../assets/images/Person3.png";
+import Person4 from "../../assets/images/Person4.png";
+import Search from "../../assets/images/search.svg";
+import Filter from "../../assets/images/filter.svg";
+import Trust from "../../assets/images/Trust.svg";
 
 const phrases = [
   " Skilled Professionals.",

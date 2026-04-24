@@ -1,4 +1,4 @@
-import Arrow from "../../../assets/images/Arrow.svg"
+import Arrow from "../../assets/images/Arrow.svg"
 
 const HowitWorks = () => {
   return (

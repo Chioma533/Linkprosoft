@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
-import Person6 from "../../../assets/images/Person6.png";
+import Person6 from "../../assets/images/Person6.png";
 
 
 const testimonials = [

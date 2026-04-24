@@ -2,14 +2,14 @@ import { Link, useNavigate } from 'react-router-dom';
 import { RiMenu5Fill } from "react-icons/ri";
 import { IoCloseSharp } from "react-icons/io5";
 import { useState } from 'react';
-import { useAuth } from '../../../contexts/User';
-import avatar from '../../../assets/images/avatar.png';
+import { useAuth } from '../../contexts/User';
+import avatar from '../../assets/images/avatar.png';
 
 
 const Navbar = () => {
   const [isToggled, setIsToggled] = useState(false);
   const navigate = useNavigate();
-  const {user} = useAuth();
+  const { user } = useAuth();
 
   const handleMenu = () => {
     setIsToggled(() => !isToggled);
@@ -31,14 +31,14 @@ const Navbar = () => {
               <Link to="/employer-dashboard">Contact Us</Link>
             </div>
 
-            { !user ? 
-            <div className="flex gap-3 text-[15px]">
-              <Link to="/signup-as" className="bg-bluecolor lg:hover:bg-transparent border hover:border-bluecolor text-white hover:text-bluecolor font-Inter py-[10px] px-[25px] rounded-tl-[40px] rounded-br-[40px]">Sign Up</Link>
-              <Link to="/login" className="border text-white lg:text-bluecolor border-white lg:border-bluecolor lg:hover:bg-bluecolor hover:text-white font-Inter py-[10px] px-[25px] rounded-tl-[40px] rounded-br-[40px]">Login</Link>
-            </div>
-            : <div onClick={() => navigate('/user-dashboard/')} className='hidden lg:block'>
-              <img src={avatar} alt="" />
-            </div>
+            {!user ?
+              <div className="flex gap-3 text-[15px]">
+                <Link to="/signup-as" className="bg-bluecolor lg:hover:bg-transparent border hover:border-bluecolor text-white hover:text-bluecolor font-Inter py-[10px] px-[25px] rounded-tl-[40px] rounded-br-[40px]">Sign Up</Link>
+                <Link to="/login" className="border text-white lg:text-bluecolor border-white lg:border-bluecolor lg:hover:bg-bluecolor hover:text-white font-Inter py-[10px] px-[25px] rounded-tl-[40px] rounded-br-[40px]">Login</Link>
+              </div>
+              : <div onClick={() => navigate('/user-dashboard/')} className='hidden lg:block'>
+                <img src={avatar} alt="" />
+              </div>
             }
 
           </div>
