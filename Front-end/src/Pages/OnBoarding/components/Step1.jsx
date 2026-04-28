@@ -1,4 +1,5 @@
 import React from 'react'
+import Input from '../../../components/input/input'
 
 const Step1 = () => {
     return (
@@ -22,8 +23,18 @@ const Step1 = () => {
                             placeholder='Port Harcourt'
                             id='city'
                             name='city'
-                            className='w-full border  outline-none py-2 px-3 border-blue-500 rounded-md md:rounded-sm mt-1 placeholder-gray-400'
+                            className='w-full border outline-none py-2 px-3 border-blue-500 rounded-md md:rounded-sm mt-1 placeholder-gray-400'
                         />
+                        <Input
+                            type="text"
+                            placeholder="Port Harcourt"
+                            id="city"
+                            name="city"
+                            label="City, State *"
+                            onChange={(e) => setCity(e.target.value)}
+                            variant='bordered'
+                        />
+
                     </div>
                     <div className='font-Inter'>
                         <label

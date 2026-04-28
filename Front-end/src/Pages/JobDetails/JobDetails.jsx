@@ -1,11 +1,10 @@
-import Footer from '../Home/components/Footer'
 import PrevNext from './components/PrevNext'
 import Feed from './components/Feed'
 import Navbar from './components/Navbar2'
 import Suggested from './components/Suggested'
-import Newsletter from '../Home/components/Newsletter'
+import Newsletter from '../../components/Home/Newsletter'
 import { feedData } from "../../data/feedData2"
-
+import Footer from '../../components/Home/Footer'
 
 
 const JobDetails = () => {
